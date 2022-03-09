@@ -53,7 +53,6 @@ class CoinbaseCalc:
                 while wipe_out_purchase:
                     original_purchase_total = buy_currency_amount * purchase['usd_per_unit']
                     current_sell_total = buy_currency_amount * txn['usd_per_unit']
-                    print(buy_currency_amount, sell_currency_amount)
                     diff = current_sell_total - original_purchase_total
                     if diff > 0:
                         self.gains += diff
