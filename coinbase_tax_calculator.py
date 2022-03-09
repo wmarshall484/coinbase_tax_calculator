@@ -2,7 +2,7 @@ from collections import defaultdict
 f = open('coinbase_txns.csv', 'r')
 
 class CoinbaseCalc:
-    def __init__(self, curr = 'XLM'):
+    def __init__(self, curr = 'BTC'):
         self.curr = curr
         lines = f.read().split('\n')
         lines = [line.split(' ') for line in lines]
